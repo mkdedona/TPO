@@ -16,10 +16,8 @@ body{
     font-family: "Public Sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
-    /*padding: 90px 20px 0;*/
     background-color: #0e0e0e;
 }
- /*seccionar el codigo con comentarios asi es mas facil de leer*/
 
  /*HEADER*/
 .grid-container > *{
@@ -41,10 +39,10 @@ body{
     width: 100%;
     margin: 10px auto;
 }
- a{
+a{
     text-decoration: none;
-    /*es mas comodo asignarle a todos los <a> el text-decoration:none para no andar asignandolo a cada a que agregues*/
- }
+}
+
 .nav-link{
     color: white;
 }
@@ -60,7 +58,6 @@ body{
 .name{
     font-family: "Bad Script", cursive;
     padding-top: 5px;
-    /*borré margin-left:80px*/
 }
  
 #img-logo{
@@ -68,51 +65,40 @@ body{
     padding-right: 30px; 
     display: flex;
 }
- /*conviene crear clases para las imagenes y no modificar todas las imagenes.*/
 
  ul{
     list-style: none;
-/*idem <a>*/
- }
+}
+
 .nav-menu{
     flex-direction: column;
     align-items: center;
     display: flex;
     margin-right: 20px;
-    background-color: #3f3c38;
+    background-color: #000;
     position: fixed;
-    left: 0;
-    /*este left:0 es pisado por el left:100% que se escribe despues*/
     top: 60px;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 20px 0;
  
     left: 100%;
     transition: left 0.3s;
-    /* para que aparezca una barra de navegacion cuando la pantalla sea muy chica,
-    no me funciona :(*/
-    /*height: cal(100% - 40px);
-    overflow-y: auto;*/
-
-    /*la barra de navegación no se ve en algunas medidas porque hay mucho espacio asignado en padding y margin(en el ul y en cada li) entonces directamente no entran en algunas resoluciones. Por eso agregué cambios en los nav-menu y nav-menu-item y nav-menu-link de las las media queries */
 }
  
 .nav-menu-link{
     font-size: 20px;
-    /*margin: 0 10px;*/
     line-height: 70px;
     text-transform: uppercase;
     width: max-content;
-/*No tiene sentido editar por un lado el item y por otro el link, porq los dos son lo mismo. Unifiqué el codigo. lo que esta abajo era lo del link.*/
-    /* padding: 8px 12px; */
     border-radius: 3px;
     transition: 0.5s;
 }
  /*seria mejor trabajar con los nav-menu-item o los nav-menu-links y no con los dos juntos*/
+
 .nav-menu-link:hover{
     transition: 0.5s;
-    border-bottom: 1px solid white;
+    color: rgb(255, 199, 125);
 }
  
 .nav-toggle{
@@ -142,7 +128,7 @@ body{
 #apartado1{
     background-image: url(https://img.freepik.com/fotos-premium/copa-vino-mesa-madera-restaurante_111599-382.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 15px;
     height: 30%;
@@ -150,7 +136,7 @@ body{
 
 .aviso{
     text-align: center;
-    background-color: rgba(134, 134, 134, 0.377);
+    background-color: rgba(0, 0, 0, 0.480);
     padding: 10px 0;
     height: 100%;
     line-height: 1.8;
@@ -163,33 +149,24 @@ body{
 }
 
 .aviso p {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
- 
-#resto-span{
-    color: rgb(218, 194, 173);
-    font-size: 50px;
-    font-family: serif;
-    font-weight: bold;
+    font-family: "serif";
+    color: #fff;
     letter-spacing: 2px;
 }
  
 #boton-reserva{
     margin-top: 60px;
-    background: rgba(0, 0, 0, 0.486);
-    color: white;
+    color: #fff;
     border: none;
     font-size: 25px;
     padding: 10px;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 3px;
+    line-height: 5;
 }
  
 #boton-reserva:hover{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.507);
+    color: rgb(255, 199, 125);
     transition: 0.5s;
 }
 
@@ -363,9 +340,11 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: url(/img/fondo_reserva.jpg);
-    padding-bottom: 30px;
+    padding: 5em 0;
 }
+
 .textReservas{
     display: flex;
     flex-direction: column;
@@ -376,20 +355,24 @@ hr{
     padding-top: 15px;
 
 }
+
 .h1Reservas{
     font-size: 35px;
     padding-bottom: 15px;
 }
+
 .pReservas{
     padding-bottom: 30px;
 
 }
+
 .myForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
 .myFieldset{
     width: 40%;
     display: flex;
@@ -411,6 +394,7 @@ hr{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .itemForm:focus{
     background-color: #5a5a5a;
 }
@@ -419,10 +403,12 @@ hr{
     width: 50%;
     height: 5rem;
 }
+
 .submitBtn{
     border-radius: 3px;
     width: 5rem;
 }
+
 .submitBtn:hover{
     color: rgb(255, 199, 125);
     background-color: #5a5a5a;
@@ -435,6 +421,7 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: url(/img/fondo_galeria.jpg);
 }
 
@@ -515,6 +502,7 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: url(/img/fondo_menu.jpg);
 }
 
@@ -563,27 +551,26 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     background-image: url(/img/fondo_catering.jpg);
 }
 
 .catering-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 5em;
+    display: inline;
+    margin: 2em;
 }
   
 .catering{
     border: none;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     background-color: #ffffffc5;
-    width: calc(33.33% - 20px); /* Aproximadamente 1/3 del ancho total con márgenes */
+    margin: 20px;
 }
   
 .catering img{
+    max-height: 30em;
     max-width: 100%;
-    height: 300px;
-    width: 500px;
     border-radius: 8px;
 }
   
@@ -602,7 +589,7 @@ hr{
   
 .catering a{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px 20px;
     background-color: #000000;
     color: #fff;
@@ -614,7 +601,229 @@ hr{
     color: rgb(255, 199, 125);
 }
 
+/*FORM*/
+#contenedor-form{
+    scroll-margin-top: 5ex;
+    max-width: 800px;
+    margin: 0 auto 6em auto;
+}
 
+#contenedor-form > form {
+    background-color: #ffffffc5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+#contenedor-form > h2{
+    margin-top: 6em;
+    text-align: center;
+    font-family: serif;
+    color: #fff;
+    padding: 10px;
+    background-color: #050505;
+    display: block;
+}
+
+.column {
+    flex-basis: calc(50% - 10px);
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: rgb(255, 199, 125);
+}
+
+/*BLOG*/
+#blog{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/fondo_blog.jpg);
+}
+
+.blog-container{
+    margin: 5em 10em;
+    background-color: #0000009c;
+    display: grid;
+    font-family: serif;
+    color: #fff;
+}
+
+.item-blog{
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.item-blog img{
+    object-fit: cover;
+}
+
+.item-blog h2{
+    color: rgb(255, 199, 125);
+} 
+
+.item-blog h4{
+    margin: 20px 0;
+}
+
+#container-receta{
+    justify-self:start;
+    width: 90%;
+}
+
+
+#container-receta img{
+    width: 500px;
+    height: 650px;
+    float: right;
+    margin-top: 20px;
+}
+
+#container-receta ul{
+    text-indent: 20px;
+}
+
+#container-consejo{
+    justify-self: end;
+    width: 75%;
+}
+
+#container-consejo h4{
+    text-align: center;
+}
+
+#container-cata{
+    justify-self:start;
+    width: 85%;
+    text-align: end;
+}
+
+#container-cata img{
+    width: 500px;
+    height: 650px;
+    float: left;
+    margin-right: 50px;
+}
+
+#container-especial{
+    justify-self:end;
+    width: 85%;
+}
+
+#container-especial img{
+    width: 500px;
+    height: 800px;
+    margin-top: 45px;
+    float: right;
+}
+
+#container-fiestas{
+    justify-self:start;
+    width: 80%;
+}
+
+#container-fiestas img{
+    width: 600px;
+    height: 350px;
+    float: left;
+    margin-right: 50px;
+}
+
+#container-fiestas p{
+    letter-spacing: 2px;
+}
+
+/*NOSOTROS*/
+#nosotros{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/fondo_nosotros.jpg);
+}
+
+.nosotros-contenedor{
+    display: inline-block;
+    background-color: #000000b6;
+    color: #fff;
+    font-family: serif;
+    margin: 1em;
+    padding: 10px;
+}
+
+.nosotros-contenedor > h2{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 10px;
+}
+
+.subrayado{
+    border: 1px solid #fff;
+    margin-bottom: 2em;
+}
+
+.nosotros-contenedor > p{
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
 
 /*FOOTER*/
 .footer{
@@ -705,8 +914,8 @@ hr{
         "footer"  500px;
 }
  
- /*las resoluciones mas comunes son de 768px/1024px/1200px*/
- @media (min-width: 768px){ 
+/*MEDIDAS DE TABLET*/
+@media (min-width: 768px){ 
     .nav-toggle{
         display: none;
     }
@@ -727,8 +936,7 @@ hr{
 
     .nav-menu{
         flex-direction: initial;
-         margin-right: 40px;
-        /*margin-left: 10px; */
+        margin-right: 40px;
         align-items: initial;
         position: initial;
         background-color: rgba(255, 255, 255, 0);
@@ -736,8 +944,8 @@ hr{
         left: 0;
         justify-content: end;
 
-    }      
-     /*aca agregué cambios para que entre el menú.*/
+    }
+
     .nav-menu-link{
         padding: 8px 10px;
         border-radius: 3px;
@@ -779,15 +987,11 @@ hr{
     }
 
     .aviso p {
-        font-size: 12px;
-        letter-spacing: 1px;
-        line-height: 1.8;
+        line-height: 3;
     }
- 
-    #resto-span{
-        font-size: 30px;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
+    
+    #apartado1, #apartado2, #apartado3{
+        width: 33%;
     }
 
     #apartado2, #apartado3{
@@ -829,6 +1033,41 @@ hr{
         width: 33%;
     }
 
+    .catering-container{
+        flex-direction: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catering{
+        width: calc(33.33% - 5px);
+        margin: 0;
+    }
+
+    .catering img{
+        height: 10em;
+    }
+
+    .catering p{
+        padding-bottom: 150px;
+    }
+
+    #contenedor-form{
+        scroll-margin-top: 10ex;
+    }
+
+    .nosotros-contenedor{
+        margin: 6em 5em;
+        padding: 30px;
+    }
+
+    .nosotros-contenedor > p{
+        text-align: center;
+        line-height: 3;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
     .grid-container{
         /*grid-template-columns: 200px auto;
         grid-template-rows: 100px 50px auto 100px;
@@ -848,7 +1087,7 @@ hr{
  
 }   
  
- 
+/*MEDIDAS DE ESCRITORIO*/
 @media (min-width: 1024px){
     .grid-container{
         grid-template:
@@ -865,11 +1104,7 @@ hr{
     #img-logo{
         margin-left: 5px;
     }
- /*cambié la medida del margin de cm negativos por px*/
- /*   .nav-menu{
-        padding: 0 10px 0 20px;
-    }
- */
+
     .sidebar{
         justify-content: flex-start;
     }
@@ -891,12 +1126,10 @@ hr{
     .aviso h3 {
         margin-bottom: 10px;
         font-size: 60px;
-        line-height: 1;
     }
 
     .aviso p {
-        font-size: 18px;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
         line-height: 1.5;
     }
 
@@ -923,10 +1156,6 @@ hr{
         left:25%;
     }
 
-    #resto-span{
-        font-size: 50px;
-    }
-
     .card-container {
         grid-auto-rows: 300px;
     }
@@ -950,6 +1179,34 @@ hr{
 
     #seccion-platos{
         width: 60%;
+    }
+
+    .catering-container{
+        margin: 5em;
+    }
+      
+    .catering{
+        padding: 20px;
+        width: calc(33.33% - 10px);
+    }
+
+    .catering p{
+        padding: 1em 0 8em 0;
+    }
+
+    .catering a{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .catering img{
+        height: 15em;
+        width: 100%;
+    }
+
+    #contenedor-form{
+        scroll-margin-top: 15ex;
+        max-width: 1000px;
     }
 
     .logo-foot{
