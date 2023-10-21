@@ -26,7 +26,7 @@
                 <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Home</a></li>
                 <li class="nav-menu-item"><a href="menu.html" class="nav-menu-link nav-link">Productos</a></li>
                 <li class="nav-menu-item"><a href="reservas.html" class="nav-menu-link nav-link">Reservas</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Nosotros</a></li>
+                <li class="nav-menu-item"><a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -34,8 +34,7 @@
         <div id="apartado1">
             <div class="aviso">
                 <h3>GRAND OPENING</h3>
-                <p>Vení a conocer nuestro</p>
-                <span id="resto-span">Restaurant</span><br>
+                <p>Vení a conocer nuestro Restaurant</p>
                 <a id="boton-reserva" href="reservas.html">Reservar mesa</a>
                 <!--Los button son mas para formularios. Acá es preferible usar <a> -->
             </div>
@@ -54,46 +53,45 @@
         </div>
     </aside>
     <article id="reservas" class="main">
-            <div class="textReservas">
-                <h1 class="h1Reservas">Reservá tu mesa</h1>
-                <p class="pReservas">Por favor, copletá los datos para confirmar tu reserva:</p>
-            </div>
-            <form action="" class="myForm">
-                <fieldset class="myFieldset">
-
-                    <label for="myName"><input id="myName" type="text" class="nombre itemForm" placeholder="Nombre y Apellido" required ></label>
+        <div class="textReservas">
+            <h1 class="h1Reservas">Reservá tu mesa</h1>
+            <p class="pReservas">Por favor, copletá los datos para confirmar tu reserva:</p>
+        </div>
+        <form action="" class="myForm">
+            <fieldset class="myFieldset">
+                <label for="myName"><input id="myName" type="text" class="nombre itemForm" placeholder="Nombre y Apellido" required ></label>
+            
+                <label for="myEmail"><input id="myEmail" type="email" class="correo itemForm" placeholder="e-mail" required ></label>
+            
+                <label for="myPhone"><input id="myPhone" type="tel" class="telefono itemForm" placeholder="Teléfono" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required ></label>
                 
-                    <label for="myEmail"><input id="myEmail" type="email" class="correo itemForm" placeholder="e-mail" required ></label>
-                
-                    <label for="myPhone"><input id="myPhone" type="tel" class="telefono itemForm" placeholder="Teléfono" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required ></label>
-                    
-                    <input type="date" name="dia" id="diaReserva" class=" itemForm" value="" required >
-                
-                    <select name="hora" id="horarioReserva" class=" itemForm" required>
-                        <option value="">Elegí un horario...</option>
-                        <option value="07">07:00</option>
-                        <option value="08">08:00</option>
-                        <option value="09">09:00</option>
-                        <option value="10">10:00</option>
-                        <option value="11">11:00</option>
-                        <option value="12">12:00</option>
-                        <option value="13">13:00</option>
-                        <option value="14">14:00</option>
-                        <option value="15">15:00</option>
-                        <option value="16">16:00</option>
-                        <option value="17">17:00</option>
-                        <option value="18">18:00</option>
-                        <option value="19">19:00</option>
-                    </select>
-                
-                    <input type="number" name="comenzales" class="cantPersonas itemForm" min="1" max="10" required placeHolder="Personas...">
-                
-                    <textarea class="obsForm itemForm" name="observaciones" rows="5" cols="33" placeholder="Aclaraciones..."></textarea>
-                
-                    <input type="submit" value="Enviar" class="itemForm submitBtn">
-                
-                </fieldset>
-            </form>
+                <input type="date" name="dia" id="diaReserva" class=" itemForm" value="" required >
+            
+                <select name="hora" id="horarioReserva" class=" itemForm" required>
+                    <option value="">Elegí un horario...</option>
+                    <option value="07">07:00</option>
+                    <option value="08">08:00</option>
+                    <option value="09">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                </select>
+            
+                <input type="number" name="comenzales" class="cantPersonas itemForm" min="1" max="10" required placeHolder="Personas...">
+            
+                <textarea class="obsForm itemForm" name="observaciones" rows="5" cols="33" placeholder="Aclaraciones..."></textarea>
+            
+                <input type="submit" value="Enviar" class="itemForm submitBtn">
+            
+            </fieldset>
+        </form>
     </article>
  
     <footer class="footer">
