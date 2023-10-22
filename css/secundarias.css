@@ -694,27 +694,30 @@ input[type="submit"]:hover {
     background-size: cover;
     background-position: center;
     background-image: url(/img/fondo_blog.jpg);
+    overflow: hidden;
 }
 
 .blog-container{
-    margin: 5em 10em;
+    margin: 25px;
     background-color: #0000009c;
-    display: grid;
     font-family: serif;
     color: #fff;
 }
 
 .item-blog{
-    margin: 50px 0;
-    padding: 50px;
+    margin: 20px 0;
+    padding: 20px;
 }
 
 .item-blog img{
     object-fit: cover;
+    width: 100%;
+    height: 150px;
 }
 
 .item-blog h2{
     color: rgb(255, 199, 125);
+    text-align: center;
 } 
 
 .item-blog h4{
@@ -723,16 +726,7 @@ input[type="submit"]:hover {
 
 #container-receta{
     justify-self:start;
-    width: 90%;
-}
-
-
-#container-receta img{
-    width: 500px;
-    height: 650px;
-    float: right;
-    margin-top: 20px;
-}
+} 
 
 #container-receta ul{
     text-indent: 20px;
@@ -740,7 +734,6 @@ input[type="submit"]:hover {
 
 #container-consejo{
     justify-self: end;
-    width: 75%;
 }
 
 #container-consejo h4{
@@ -749,39 +742,15 @@ input[type="submit"]:hover {
 
 #container-cata{
     justify-self:start;
-    width: 85%;
     text-align: end;
-}
-
-#container-cata img{
-    width: 500px;
-    height: 650px;
-    float: left;
-    margin-right: 50px;
 }
 
 #container-especial{
     justify-self:end;
-    width: 85%;
-}
-
-#container-especial img{
-    width: 500px;
-    height: 800px;
-    margin-top: 45px;
-    float: right;
 }
 
 #container-fiestas{
     justify-self:start;
-    width: 80%;
-}
-
-#container-fiestas img{
-    width: 600px;
-    height: 350px;
-    float: left;
-    margin-right: 50px;
 }
 
 #container-fiestas p{
@@ -1011,11 +980,11 @@ input[type="submit"]:hover {
         line-height: 2.8;
     }
 
-
     .card1{
         background-size: 400px;
     }
 
+    /*GALERIA*/
     .contenido-slider{
         flex-direction: inherit;
     }
@@ -1033,6 +1002,7 @@ input[type="submit"]:hover {
         width: 33%;
     }
 
+    /*EVENTOS Y CATERING*/
     .catering-container{
         flex-direction: inherit;
         display: flex;
@@ -1052,10 +1022,21 @@ input[type="submit"]:hover {
         padding-bottom: 150px;
     }
 
+    /*FORM*/
     #contenedor-form{
         scroll-margin-top: 10ex;
     }
 
+    /*BLOG*/
+    .item-blog img{
+        height: 300px;
+    }
+
+    .item-blog h2{
+        text-align: inherit;
+    } 
+
+    /*NOSOTROS*/
     .nosotros-contenedor{
         margin: 6em 5em;
         padding: 30px;
@@ -1169,6 +1150,7 @@ input[type="submit"]:hover {
         font-size: 40px;
     }
 
+    /*GALERIA*/
     .contenido-slider{
         height: 500px;
     }
@@ -1181,6 +1163,7 @@ input[type="submit"]:hover {
         width: 60%;
     }
 
+    /*EVENTOS Y CATERING*/
     .catering-container{
         margin: 5em;
     }
@@ -1204,11 +1187,76 @@ input[type="submit"]:hover {
         width: 100%;
     }
 
+    /*FORM*/
     #contenedor-form{
         scroll-margin-top: 15ex;
         max-width: 1000px;
     }
 
+    /*BLOG*/
+    .blog-container{
+        margin: 5em 10em;
+        display: grid;
+    }
+    
+    .item-blog{
+        margin: 50px 0;
+        padding: 50px;
+    }
+    
+    .item-blog h2{
+        text-align: inherit;
+    }
+    
+    #container-receta{
+        width: 90%;
+    }
+    
+    #container-receta img{
+        width: 500px;
+        height: 650px;
+        float: right;
+        margin-top: 20px;
+    }
+    
+    #container-consejo{
+        width: 75%;
+    }
+    
+    #container-cata{
+        width: 85%;
+    }
+    
+    #container-cata img{
+        width: 500px;
+        height: 650px;
+        float: left;
+        margin-right: 50px;
+    }
+    
+    #container-especial{
+        width: 85%;
+    }
+    
+    #container-especial img{
+        width: 500px;
+        height: 800px;
+        margin-top: 45px;
+        float: right;
+    }
+    
+    #container-fiestas{
+        width: 80%;
+    }
+    
+    #container-fiestas img{
+        width: 600px;
+        height: 350px;
+        float: left;
+        margin-right: 50px;
+    }
+
+    /*FOOTER*/
     .logo-foot{
         margin-left: 0;
         margin-bottom: 20px;
