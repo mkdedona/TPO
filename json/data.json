@@ -1,0 +1,222 @@
+[
+    {
+    "titulo":"Entradas",
+    "platos":[
+                {
+                "nombre":"Sopa del Día",
+                "precio":"$8.99"
+                },
+                {
+                "nombre":"Ensalada César",
+                "precio":"$10.99" 
+                },
+                {
+                "nombre":"Tartar de Salmón",
+                "precio":"$24.99" 
+                },  
+                {
+                "nombre":"Sopa de Almejas al Estilo de Nueva Inglaterra",
+                "precio":"$19.99" 
+                },     
+                 {
+                "nombre":"Ensalada Caprese de Mozzarella de Búfala",
+                "precio":"$21.99" 
+                },
+                {
+                "nombre":"Calamares a la Romana",
+                "precio":"$18.99" 
+                }
+               
+            ]
+    },
+    {
+    "titulo":"Platos principales",
+    "platos":[
+                {"nombre":"Filete de Salmón",
+                "precio":"$18.99"
+                },
+                {
+                "nombre":"Filete de Ternera",
+                "precio":"$22.99" 
+                },
+                {
+                "nombre":"Risotto de Trufa Negra",
+                "precio":"$29.99" 
+                },
+                {
+                "nombre":"Foie Gras con Sauternes",
+                "precio":"$34.99" 
+                },
+                {
+                "nombre":"Carpaccio de Res",
+                "precio":"$22.99" 
+                },
+                {
+                "nombre":"Salmón Gravlax",
+                "precio":"$26.99" 
+                },
+                {
+                "nombre":"Tartar de Atún",
+                "precio":"$28.99" 
+                },
+                {
+                "nombre":"Cangrejo Real",
+                "precio":"$42.99" 
+                }, 
+                {
+                "nombre":"Lomo de Cordero en Costra de Hierbas",
+                "precio":"$36.99" 
+                }, 
+                {
+                "nombre":"Caviar con Blinis",
+                "precio":"$75.99" 
+                }, 
+                {
+                "nombre":"Escargots a la Bourguignonne",
+                "precio":"$19.99" 
+                }, 
+                {
+                "nombre":"Roulade de Pollo",
+                "precio":"$25.99" 
+                }, 
+                {
+                "nombre":"Pato a la Naranja",
+                "precio":"$38.99" 
+                }, 
+                {
+                "nombre":"Pasta Fresca con Salsa de Trufa",
+                "precio":"$31.99" 
+                }, 
+                {
+                "nombre":"Sushi Omakase",
+                "precio":"$45.99" 
+                }, 
+                {
+                "nombre":"Langosta Thermidor",
+                "precio":"$48.99" 
+                }, 
+                {
+                "nombre":"Raviolis de Langosta",
+                "precio":"$33.99" 
+                }, 
+                {
+                "nombre":"Filete Mignon con Salsa Béarnaise",
+                "precio":"$40.99" 
+                }, 
+                {
+                "nombre":"Bouillabaisse",
+                "precio":"$37.99" 
+                }, 
+                {
+                "nombre":"Ensalada Waldorf",
+                "precio":"$18.99" 
+                }, 
+                {
+                "nombre":"Tournedos Rossini",
+                "precio":"$52.99" 
+                }, 
+                {
+                "nombre":"Cordero en Costra de Pistachos",
+                "precio":"$39.99" 
+                } 
+            
+            
+            
+
+            ]
+    
+    },
+    {
+        "titulo":"Postres",
+        "platos":[
+                {
+                "nombre":"Tarta de Chocolate",
+                "precio":"$7.99" 
+                },  
+                {
+                "nombre":"Tiramisú",
+                "precio":"$9.99" 
+                },  
+                {
+                "nombre":"Soufflé de Chocolate Caliente",
+                "precio":"$12.99" 
+                },  
+                {
+                "nombre":"Crumble de Manzana con Helado de Vainilla",
+                "precio":"$10.99" 
+                },  
+                {
+                "nombre":"Panna Cotta con Frutos Rojos",
+                "precio":"$9.99" 
+                }
+
+
+
+        ]
+
+    },
+    {
+        "titulo":"Bebidas",
+        "platos":[
+            {
+                "nombre":"Vino Tinto",
+                "precio":"$12.99" 
+                },
+            {
+                "nombre":"Cóctel de la Casa",
+                "precio":"$10.99" 
+                },
+            {
+                "nombre":"Agua Mineral con Gas",
+                "precio":"$5.99" 
+                },
+            {
+                "nombre":"Cerveza Artesanal",
+                "precio":"$8.99" 
+                },
+            {
+                "nombre":"Limonada Fresca",
+                "precio":"$4.99" 
+                },
+            {
+                "nombre":"Refresco de Frutas Naturales",
+                "precio":"$6.99" 
+                },
+            {
+                "nombre":"Café Espresso",
+                "precio":"$4.99" 
+                },
+            {
+                "nombre":"Té de Hierbas Orgánico",
+                "precio":"$3.99" 
+                }
+
+        ] 
+    },
+    {
+        "titulo":"Menú Infantil",
+        "platos": [
+            {
+                "nombre":"Nuggets de Pollo",
+                "precio":"$6.99" 
+                },
+            {
+                "nombre":"Perrito Caliente",
+                "precio":"$5.99" 
+                },
+            {
+                "nombre":"Mini Pizzas",
+                "precio":"$7.99" 
+                },
+            {
+                "nombre":"Macarrones con Queso",
+                "precio":"$6.99" 
+                },
+            {
+                "nombre":"Hamburguesa Mini",
+                "precio":"$7.99" 
+                }
+        ]
+    }
+
+]
