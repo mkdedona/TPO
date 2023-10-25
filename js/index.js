@@ -31,13 +31,17 @@ function fnClick(e) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Por favor, complete todos los datos.'
+            text: 'Por favor, complete todos los datos.',
+            confirmButtonText: 'Ok',
+            confirmButtonColor: '#202020'
           })
     }else{
         Swal.fire({
             icon: 'success',
             title: 'Reserva Confirmada',
-            title: 'Tu reserva se confirmó exitosamente. ¡Nos vemos pronto!'
+            title: 'Tu reserva se confirmó exitosamente. ¡Nos vemos pronto!',
+            confirmButtonText: 'Ok',
+            confirmButtonColor: '#202020'
             });
         itemForm.forEach((input) => {
             input.value = "";          

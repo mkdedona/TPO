@@ -554,6 +554,7 @@ hr{
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgb(255, 126, 126) 0%, rgba(0,0,0,0) 70%);
 }
+
 /*FORMULARIO DE CATERING*/
 #contenedor-form{
     scroll-margin-top: 5ex;
