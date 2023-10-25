@@ -24,10 +24,12 @@
             <button class="nav-toggle" aria-label="Abrir menú">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <ul class="nav-menu nav-menu_visible">
+            <ul class="nav-menu ">
                 <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Home</a></li>
-                <li class="nav-menu-item"><a href="menu.html" class="nav-menu-link nav-link">Productos</a></li>
-                <li class="nav-menu-item"><a href="reservas.html" class="nav-menu-link nav-link">Reservas</a></li>
+                <li class="nav-menu-item"><a href="menu.html" class="nav-menu-link nav-link">Menú</a></li>
+                <li class="nav-menu-item"><a href="galeria.html" class="nav-menu-link nav-link">Galeria</a></li>
+                <li class="nav-menu-item"><a href="eventos.html" class="nav-menu-link nav-link">Reservas</a></li>
+                <li class="nav-menu-item"><a href="blog.html" class="nav-menu-link nav-link">Blog</a></li>
                 <li class="nav-menu-item"><a href="nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
             </ul>
         </nav>
@@ -55,38 +57,54 @@
               <p>Nuestro servicio de catering de lujo es perfecto para eventos exclusivos. Disfrute de platos exquisitos, presentación impecable y un servicio personalizado que dejará a sus invitados impresionados.</p>
               <a href="#contenedor-form">Solicitar Cotización</a>
             </div>
-          </div>
+          </div> 
 
-        <div id="contenedor-form">
-            <h2>Cotice su Evento!</h2>
-            <form action="" method="POST">
-                
+        <section id="contenedor-form">
+            <form action="" class="myForm">
+                <h2 class="h2Form">Cotice su Evento!</h2>
+                <fieldset class="myFieldset">
                 <div class="column">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" class="itemForm">
 
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
+                    <input type="text" id="apellido" name="apellido" class="itemForm">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" class="itemForm">
 
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
+                    <input type="tel" id="telefono" name="telefono" class="itemForm" pattern="[0-9]{2}[0-9]{4}[0-9]{4}">
                 </div>
 
                 <div class="column">
                     <label for="fecha">Fecha del Evento:</label>
-                    <input type="date" id="fecha" name="fecha">
+                    <input type="date" id="fecha" name="fecha" class="itemForm">
 
                     <label for="horario">Horario del Evento:</label>
-                    <input type="time" id="horario" name="horario">
+                    <select name="horario" id="horario" class="itemForm">
+                        <option value="">Elegí un horario...</option>
+                        <option value="07">07:00</option>
+                        <option value="08">08:00</option>
+                        <option value="09">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                    </select>
 
                     <label for="personas">Número de Personas:</label>
-                    <input type="number" id="personas" name="personas">
+                    <input type="number" id="personas" name="personas" class="itemForm" min="1">
 
                     <label for="paquete">Selecciona un Paquete de Catering:</label>
-                    <select id="paquete" name="paquete">
+                    <select id="paquete" name="paquete" class="itemForm">
+                        <option value="">Elegí un paquete...</option>
                         <option value="paquete1">Paquete Elegante</option>
                         <option value="paquete2">Paquete Temático</option>
                         <option value="paquete3">Paquete de Lujo</option>
@@ -96,9 +114,10 @@
                 <label for="comentario">Comentario:</label>
                 <textarea id="comentario" name="comentario" rows="4"></textarea>
 
-                <input type="submit" value="Solicitar Presupuesto">
+                <input type="submit" value="Solicitar Presupuesto" class="submitBtn">
+            </fieldset>
             </form>
-        </div>
+        </section>
     </article>
 
     <aside id="sidebar-sec" class="sidebar">

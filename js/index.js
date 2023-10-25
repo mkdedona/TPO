@@ -13,13 +13,9 @@ navToggle.addEventListener("click", () => {
 }); 
 
 
-//RESERVAS
-
-const reservas = document.getElementById("reservas");
-let formulario = document.createElement("form");
-
+//Formulario
 let hoy = new Date();
-let diaReserva = document.getElementById('diaReserva');
+let diaReserva = document.getElementById('fecha');
 diaReserva.value = hoy.toISOString().split('T')[0];
 diaReserva.setAttribute('min', diaReserva.value);
 
@@ -28,11 +24,10 @@ submitBtn.addEventListener("click", fnClick);
 
 let itemForm = document.querySelectorAll(".itemForm");
 
-
 function fnClick(e) {
     e.preventDefault();
 
-    if( (itemForm[0].value=="")||(itemForm[1].value=="")||(itemForm[2].value=="")||(itemForm[3].value=="")||(itemForm[4].value=="")||(itemForm[5].value=="") ){
+    if( (itemForm[0].value=="")||(itemForm[1].value=="")||(itemForm[2].value=="")||(itemForm[3].value=="")||(itemForm[4].value=="")||(itemForm[5].value=="")|(itemForm[6].value=="")|(itemForm[7].value=="") ){
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -45,57 +40,7 @@ function fnClick(e) {
             title: 'Tu reserva se confirmó exitosamente. ¡Nos vemos pronto!'
             });
         itemForm.forEach((input) => {
-            input.value = "";
-            itemForm[7].value="Enviado";            
+            input.value = "";          
         });
     }
-    
-    }
-
-
-
-
-
-// const form = document.getElementById('cotizacionForm');
-
-//         form.addEventListener('click', function(event) {
-//             let isValid = true;
-
-//             // Validación de campos
-//             if (!form.nombre.value) {
-//                 isValid = false;
-//                 alert('Por favor, ingrese su nombre.');
-//             }
-//             if (!form.apellido.value) {
-//                 isValid = false;
-//                 alert('Por favor, ingrese su apellido.');
-//             }
-//             if (!form.email.value) {
-//                 isValid = false;
-//                 alert('Por favor, ingrese su correo electrónico.');
-//             }
-//             if (!form.telefono.value) {
-//                 isValid = false;
-//                 alert('Por favor, ingrese su número de teléfono.');
-//             }
-//             if (!form.fecha.value) {
-//                 isValid = false;
-//                 alert('Por favor, seleccione la fecha del evento.');
-//             }
-//             if (!form.horario.value) {
-//                 isValid = false;
-//                 alert('Por favor, seleccione el horario del evento.');
-//             }
-//             if (!form.personas.value) {
-//                 isValid = false;
-//                 alert('Por favor, ingrese el número de personas.');
-//             }
-//             if (!form.paquete.value) {
-//                 isValid = false;
-//                 alert('Por favor, seleccione un paquete de catering.');
-//             }
-
-//             if (!isValid) {
-//                 event.preventDefault(); // Evita el envío del formulario si no es válido
-//             }
-//         });
+}
