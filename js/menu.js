@@ -3,7 +3,7 @@ let itemNombre = document.getElementsByClassName("item-nombre");
 let itemPrecio = document.getElementsByClassName("item-precio");
 
 async function pedirPost(){
-  let varFetch = await fetch('../json/data.json')
+  let varFetch = await fetch("./json/data.json")
   const data = await varFetch.json(); 
  
   data.forEach( producto => {
