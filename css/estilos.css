@@ -101,7 +101,7 @@ ul{
 }
  
 .nav-toggle{
-    color: white;
+    color: #fff;
     background: none;
     border: none;
     font-size: 30px;
@@ -503,6 +503,26 @@ hr{
     align-items: center;
 }
 
+.secciones{
+    margin: 10em 0;
+    padding: 2em 0;
+    background-color: #000000e0;
+    color: #fff;
+}
+
+.secciones>h2{
+    text-align: center;
+    padding: 20px 0;
+    font-family: serif;
+}
+
+.secciones>p{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: serif;
+    padding: 10px;
+}
+
 .catering-container{
     display: inline;
     margin: 2em;
@@ -512,7 +532,6 @@ hr{
     border: none;
     padding: 15px;
     text-align: center;
-    background-color: #ffffffc5;
     margin: 20px;
 }
   
@@ -524,13 +543,11 @@ hr{
   
 .catering h2{
     font-size: 24px;
-    color: #222;
     margin: 10px 0;
 }
   
 .catering p{
     font-size: 16px;
-    color: #555;
     text-align: justify;
     max-height: 60px;
 }
@@ -539,14 +556,14 @@ hr{
     display: inline-block;
     margin-top: 40px;
     padding: 10px 20px;
-    background-color: #000000;
-    color: #fff;
+    background-color: rgb(255, 199, 125);
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
 }
   
 .catering a:hover{
-    color: rgb(255, 199, 125);
+    color: #fff;
 }
 .imgScroll{
     width: 100px;
@@ -559,12 +576,10 @@ hr{
 #contenedor-form{
     scroll-margin-top: 5ex;
     max-width: 800px;
-    margin: 0 auto 6em auto;
+    margin: 0 auto;
 }
 
 .myFieldset {
-    background-color: #999999c5;
-    box-shadow: 0 0 10px rgba(71, 71, 71, 0.1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -576,10 +591,9 @@ hr{
 .h2Form{
     margin-top: 3em;
     text-align: center;
-    font-family: serif;
-    color: #fff;
+    color: #000;
     padding: 10px;
-    background-color: #050505;
+    background-color: rgb(255, 199, 125);
     display: block;
 }
 
@@ -628,8 +642,8 @@ textarea {
 }
 
 .submitBtn{
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(255, 199, 125);
+    color: #000;
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
@@ -638,8 +652,7 @@ textarea {
 }
 
 .submitBtn:hover {
-    color: rgb(255, 199, 125);
-    background-color: #121212;
+    color: #fff;
 }
 /*ESTILOS PÁGINA BLOG*/
 #blog{
@@ -754,6 +767,96 @@ textarea {
     line-height: 2;
     letter-spacing: 1px;
     font-size: 15px;
+}
+
+/*SECCION RESEÑAS*/
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 10em 0 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+.testimonial.box{
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong{
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews{
+    color: #f9d71c;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em 0 20px 0;
+}
+
+.client-comment p{
+    font-size: 0.9rem;
+    color: #d8d8d8;
+}
+
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
 }
 
 /*FOOTER*/
@@ -886,11 +989,10 @@ textarea {
         margin-right: 40px;
         align-items: initial;
         position: initial;
-        background-color: rgba(255, 255, 255, 0);
         padding-top: 10px ;
         left: 0;
         justify-content: end;
-    }      
+    } 
     
     .nav-menu-link{
         padding: 8px 8px;
@@ -1014,20 +1116,26 @@ textarea {
         flex-direction: column;
         align-items: center;
     }
-    .catering-container{
-        flex-direction: inherit;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .catering{
-        width: calc(33.33% - 5px);
-        margin: 0;
+    .catering-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        margin: 2em;
+    }
+      
+    .catering {
+        width: calc(50% - 40px); 
+        border: none;
+        padding: 15px;
+        text-align: center;
+        margin: 20px;
     }
 
     .catering img{
         height: 10em;
+        width: 100%;
     }
 
     .catering p{
@@ -1231,13 +1339,8 @@ textarea {
     }
 
     /*EVENTOS Y CATERING*/
-    .catering-container{
-        margin: 5em;
-    }
-      
     .catering{
-        padding: 20px;
-        width: calc(33.33% - 10px);
+        width: calc(33.33% - 40px); /* El 40px es para tener en cuenta los márgenes. */
     }
 
     .catering p{
@@ -1251,7 +1354,6 @@ textarea {
 
     .catering img{
         height: 15em;
-        width: 100%;
     }
 
     /*FORM*/
