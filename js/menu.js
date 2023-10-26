@@ -26,5 +26,6 @@ async function pedirPost(){
     });
     seccionPlatos.append(h2Menu,div1);
   })
+  return data;
 }
 pedirPost();
