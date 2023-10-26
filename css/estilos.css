@@ -367,7 +367,7 @@ hr{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/fondo_menu.jpg);
+    background-image: url(../img/fondo_menu.jpg);
 }
 
 
@@ -417,7 +417,7 @@ hr{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/fondo_galeria.jpg);
+    background-image: url(../img/fondo_galeria.jpg);
 }
 
 .slider-contenedor{
@@ -498,7 +498,7 @@ hr{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/fondo_catering.jpg);
+    background-image: url(../img/fondo_catering.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -662,7 +662,7 @@ textarea {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/fondo_blog.jpg);
+    background-image: url(../img/fondo_blog.jpg);
     overflow: hidden;
 }
 
@@ -740,7 +740,7 @@ textarea {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-image: url(/img/fondo_nosotros.jpg);
+    background-image: url(../img/fondo_nosotros.jpg);
 }
 
 .nosotros-contenedor{
